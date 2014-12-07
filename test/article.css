@@ -1,0 +1,249 @@
+.event-article-wrapper,
+.place-article-wrapper {
+	margin-left: -55px;
+	margin-right: -55px;
+}
+.event-article-wrapper,
+.place-article-wrapper,
+.article-wrapper {
+	margin-bottom: 6.5em;
+}
+
+.article-wrapper {
+	overflow: hidden;
+}
+
+.event-article-wrapper a img,
+.place-article-wrapper a img,
+.article-wrapper a img {
+	opacity: 0.9;
+}
+.event-article-wrapper a:hover img,
+.place-article-wrapper a:hover img,
+.article-wrapper a:hover img {
+	opacity: 1;
+}
+.article {
+	font-family: Lora, Georgia, serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.article-block-text a {
+	text-decoration: underline;
+}
+.article a.article-annotation-link {
+	text-decoration: none;
+}
+
+.article-block-text a:hover {
+	color: #808080;
+}
+
+.article-block-text h2,
+.article-block-text h3,
+.article-block-text p,
+.article-block-image p {
+	text-align: center;
+	line-height: 1.6em;
+	margin: 1em auto 1.55em auto;
+	padding: 0;
+}
+
+.article-block-text p:first-child,
+.article-block-image p:first-child {
+	margin-top: 0;
+}
+
+.article-block-text p:last-child,
+.article-block-image p:last-child {
+	margin-bottom: 0;
+}
+
+.article-block,
+.article-block-embed,
+.article-block-articlecut,
+.article-block-text {
+	margin-bottom: 1em;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.article-title {
+	text-align: center;
+
+	font-weight: normal;
+	font-size: 2.333333em;
+	line-height: 1.3em;
+	margin: 0 auto;
+	max-width: 19em;
+
+}
+.article-date {
+	text-align: center;
+
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1em;
+	margin: 0.5em 0;
+}
+
+.article-place-price {
+	text-align: center;
+	line-height: 1.4em;
+	margin: 0 0 0.65em 0;
+}
+
+.article-place {
+	font-family: 'Roboto', 'Trebuchet MS', sans-serif, sans;
+	font-weight: 700;
+	font-size: 1em;
+	letter-spacing: 0.21em;
+	text-transform: uppercase;
+}
+
+.article-price {
+	font-family: 'Roboto', 'Trebuchet MS', sans-serif, sans;
+	font-weight: 500;
+	font-size: 1.00625em;
+}
+
+.article-buttons {
+	text-align: center;
+}
+
+.article-created {
+	margin-top: 2.86em;
+	font-size: 0.534722em;
+	text-align: center;
+}
+
+.article-header-wrapper {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+
+.article-header-image {
+	min-width: 100%;
+	min-height: 640px;
+}
+
+.article-header-image ~ .article-title-wrapper {
+	color: #FFF;
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+}
+
+.article-block-articlecut {
+	display: block;
+	text-align: center;
+	margin: 1em 0;
+	width: 100%;
+	border-bottom: 5px dashed #999;
+}
+
+/* text block */
+.article-block-text {
+	line-height: 1.6em;
+	margin-bottom: 1.9em;
+}
+
+.article-block-text p:first-child {
+	margin-top: 1.75em;
+}
+
+.article-block-text h2:first-child,
+.article-block-text h3:first-child,
+.article-block-text p.big:first-child {
+	margin-top: 0.6em;
+}
+
+.article-block-text p.left {
+	text-align: left;
+}
+
+.article-block-text p.right {
+	text-align: right;
+}
+
+.article-block-text h2,
+.article-block-text h3,
+.article-block-text p.big {
+	font-weight: normal;
+	font-size: 2.041667em;
+	line-height: 1.3em;
+	margin-bottom: 0.6em;
+	max-width: 19em;
+}
+
+/* image block */
+.article-block-image {
+	width: 600px;
+	margin: 0 auto 1px auto;
+	line-height: 0;
+}
+
+.article-block-image-wide {
+	width: 100%;
+}
+
+.article-block-image img {
+	width: 100%;
+}
+
+.article-block-image-container {
+	position: relative;
+	color: #fff;
+}
+
+.article-block-image-top-text {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding-top: 1.5em;
+
+}
+
+.article-block-image-bottom-text {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding-bottom: 1.5em;
+}
+
+.article-block-image-top-text p,
+.article-block-image-bottom-text p,
+.article-block-image-caption p,
+.article-block-embed-caption p {
+	width: 600px;
+}
+
+.article-title-wrapper .article-share {
+	margin-bottom: 20px;
+}
+.article-share {
+	width: 600px;
+	margin: 20px auto 0 auto;
+	text-align: center;
+	line-height: 1px;
+	font-size: 1px;
+}
+
+.article-wrapper:hover .article-share {
+	display: block;
+}
+
+.article-share .share-button {
+	display: inline-block;
+	width: 90px;
+}
+
+.article-share .share-button-fb {
+	margin-right: 15px;
+}
+.article-share .share-button-gp {
+	position: relative;
+}

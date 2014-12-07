@@ -1,0 +1,197 @@
+.iproj-editor {
+	position: relative;
+}
+
+.iproj-editor-toolbar {
+	position: absolute;
+
+	z-index: 1000;
+}
+
+.iproj-editor-toolbar-inner {
+	position: relative;
+
+	white-space: nowrap;
+	box-shadow: 1px 2px 3px -2px #222;
+	background: #333;
+	background-image: linear-gradient(top bottom, #222, #333);
+	opacity: 0.9;
+
+	height: 36px;
+
+	border: 1px solid #333;
+
+	border-radius: 3px;
+}
+
+.iproj-editor-toolbar-centered .iproj-editor-toolbar-inner {
+	left: -50%;
+}
+
+.iproj-editor-toolbar-text-input-active {
+	min-width: 600px;
+}
+.iproj-editor-toolbar-text-input-active-multiline {
+	height: 72px;
+}
+
+.iproj-editor-toolbar-new-block {
+	left: 10%;
+	top: 0;
+}
+
+.iproj-editor-toolbar-arrange-block {
+	right: 10%;
+	top: 0;
+}
+
+.iproj-editor-block-focused {
+	box-shadow: 0px 0px 3px 3px #ddd;
+}
+
+.iproj-editor-block-embed-input,
+.iproj-editor-block-image-input {
+	width: 90%;
+}
+
+[contenteditable]:focus {
+	min-width: 1em;
+	min-height: 1em;
+	display: block;
+}
+
+.iproj-editor-toolbar-text-input {
+	position: absolute;
+	font-size: 18px;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 36px;
+	color: #fff;
+	background: #333;
+	border: none;
+	text-align: center;
+}
+.iproj-editor-toolbar-text-input:focus {
+	outline: none;
+}
+
+textarea.iproj-editor-toolbar-text-input {
+	height: 72px;
+}
+
+.iproj-editor-toolbar-text-input:focus {
+	outline: none;
+}
+.iproj-editor-toolbar-file-input {
+	display: none;
+}
+
+.iproj-editor-toolbar-button {
+	font: normal 400 18px/40px iproj-editor;
+
+	speak: none;
+
+	min-width: 20px;
+	display: inline-block;
+	padding: 0 10px;
+	height: 36px;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.iproj-editor-toolbar-button.active {
+	color: #1abf89;
+	background: #000;
+	box-shadow: inset 2px 2px 4px #000;
+}
+
+.iproj-editor-toolbar-top:after {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.iproj-editor-toolbar-top:after {
+	border-color: rgba(51, 51, 51, 0);
+	border-top-color: #333;
+	border-width: 6px;
+	left: 50%;
+	margin-left: -6px;
+}
+.iproj-editor-toolbar-bottom:after {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.iproj-editor-toolbar-bottom:after {
+	border-color: rgba(51, 51, 51, 0);
+	border-bottom-color: #333;
+	border-width: 6px;
+	left: 50%;
+	margin-left: -6px;
+}
+
+.iproj-editor-toolbar-centered.iproj-editor-toolbar-bottom:after,
+.iproj-editor-toolbar-centered.iproj-editor-toolbar-top:after {
+	left: 0;
+}
+
+.iproj-editor-icon-h1,
+.iproj-editor-icon-h2,
+.iproj-editor-icon-h3,
+.iproj-editor-icon-h4,
+.iproj-editor-icon-h5,
+.iproj-editor-icon-h6 {
+	font-weight: bold;
+}
+
+.iproj-editor-wysiwyg h1:before,
+.iproj-editor-wysiwyg h2:before,
+.iproj-editor-wysiwyg h3:before,
+.iproj-editor-wysiwyg h4:before,
+.iproj-editor-wysiwyg h5:before,
+.iproj-editor-wysiwyg h6:before {
+	position: relative;
+	display: inline-block;
+	margin-left: -20px;
+	margin-top: -1em;
+	width: 20px;
+	content: 'p';
+	top: -1em;
+	font-size: 10px;
+	color: #ccc;
+}
+.iproj-editor-wysiwyg h1:before {
+	content: 'H1';
+}
+.iproj-editor-wysiwyg h2:before {
+	content: 'H2';
+}
+.iproj-editor-wysiwyg h3:before {
+	content: 'H3';
+}
+.iproj-editor-wysiwyg h4:before {
+	content: 'H4';
+}
+.iproj-editor-wysiwyg h5:before {
+	content: 'H5';
+}
+.iproj-editor-wysiwyg h6:before {
+	content: 'H6';
+}

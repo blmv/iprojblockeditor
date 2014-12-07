@@ -1,0 +1,13 @@
+{
+	"name": "IprojBlockEditor.js",
+	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/iproj/IprojBlockEditor.js"
+	},
+	"dependencies": {
+		"jquery": "https://github.com/jquery/jquery/archive/1.7.2.zip",
+		"rangy": "https://rangy.googlecode.com/files/rangy-1.3alpha.804.zip",
+		"undo": "https://github.com/jzaefferer/undo/archive/master.zip"
+	}
+}
