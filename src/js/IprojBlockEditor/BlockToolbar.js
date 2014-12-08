@@ -14,7 +14,7 @@
 	$.extend(BlockToolbar.prototype, {
 		showForBlock: function(block) {
 			this.$element.show();
-			var t = block.$element.position().top + block.$element.height();
+			var t = block.$element.offset().top + block.$element.height();
 			this.showOnPosition(undefined, t - this.$element.height());
 		},
 

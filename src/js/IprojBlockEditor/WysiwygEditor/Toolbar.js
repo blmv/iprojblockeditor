@@ -17,6 +17,7 @@
 			'h5': {command: 'IprojBlockEditor.WysiwygEditor.ReplaceContainerCommand', commandOptions: {tagName: 'h5'}},
 			'h6': {command: 'IprojBlockEditor.WysiwygEditor.ReplaceContainerCommand', commandOptions: {tagName: 'h6'}},
 			'big': {command: 'IprojBlockEditor.WysiwygEditor.ReplaceContainerCommand', commandOptions: {tagName: 'p', tagClass: 'big'}},
+			'container': {command: 'IprojBlockEditor.WysiwygEditor.ReplaceContainerCommand'},
 			'class': {command: 'IprojBlockEditor.WysiwygEditor.ApplyClassToContainerCommand'},
 			'undo': {command: 'IprojBlockEditor.WysiwygEditor.UndoCommand'},
 			'redo': {command: 'IprojBlockEditor.WysiwygEditor.RedoCommand'}

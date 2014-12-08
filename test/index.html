@@ -28,6 +28,15 @@
 </head>
 <body>
 <p class="article-title">Название статьи</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <div class="article">
 	<div class="article-block article-block-text">
 	<p>На территории Артплэй открылось вегетарианское кафе, отличающееся от своих коллег, свободных от мяса, множеством приятных деталей. Таких, как динамичное меню, меняющееся почти каждый день, удивительно низкие цены и невероятно тёплая дружеская атмосфера гостеприимства.</p>
@@ -41,10 +50,10 @@
 </div>
 
 
-<script src="../bower_components/jquery/jquery.min.js"></script>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
-<script src="../bower_components/rangy/uncompressed/rangy-core.js"></script>
-<script src="../bower_components/rangy/uncompressed/rangy-cssclassapplier.js"></script>
+<script src="../bower_components/rangy-official/rangy-core.js"></script>
+<script src="../bower_components/rangy-official/rangy-classapplier.js"></script>
 
 <script src="../bower_components/undo/undo.js"></script>
 
@@ -109,6 +118,10 @@
 
 	var e = new IprojBlockEditor.WysiwygEditor({
 		element: document.querySelector('.article-title'),
+		buttons: [
+			{name: 'italic', command: 'italic'},
+			{name: 'bold', command: 'bold'},
+		],
 		tags: {
 			containers: [],
 			inline: ['b', 'i']
