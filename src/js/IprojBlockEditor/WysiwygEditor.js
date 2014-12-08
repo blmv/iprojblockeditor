@@ -48,9 +48,9 @@
 				{name: null, command: 'redo', hotkey: 'y'},
 				{name: 'italic', command: 'italic', hotkey: 'i'},
 				{name: 'bold', command: 'bold', hotkey: 'b'},
-				{name: 'h1', text: 'H1', command: 'h1'},
-				{name: 'h2', text: 'H2', command: 'h2'},
-				{name: 'h3', text: 'H3', command: 'h3'},
+				{name: 'h1', command: 'h1'},
+				{name: 'h2', command: 'h2'},
+				{name: 'h3', command: 'h3'},
 				{name: 'link', command: 'link'},
 			],
 			tags: {

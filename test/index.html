@@ -105,6 +105,11 @@
 	// config
 	var options = {
 		element: document.querySelector('.article'),
+		toolbarOptions: {
+			newblock: {
+				blocks: ['text', 'embed', 'image']
+			}
+		},
 		blockOptions: {
 			text: {
 				buttons: IprojBlockEditor.WysiwygEditor.prototype.defaultOptions.buttons
@@ -113,6 +118,7 @@
 	};
 	options.blockOptions.text.buttons.push({name: 'align-left', command: 'class', commandOptions: {className: 'left', conflictClassNames: 'right'}});
 	options.blockOptions.text.buttons.push({name: 'align-right', command: 'class', commandOptions: {className: 'right', conflictClassNames: 'left'}});
+	options.blockOptions.text.buttons.push({name: 'big', command: 'big'});
 
 	var editor = new IprojBlockEditor(options);
 
