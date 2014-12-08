@@ -85,7 +85,9 @@ textarea.iproj-editor-toolbar-text-input {
 	outline: none;
 }
 .iproj-editor-toolbar-file-input {
-	display: none;
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
 }
 
 .iproj-editor-toolbar-button {
@@ -194,4 +196,23 @@ textarea.iproj-editor-toolbar-text-input {
 }
 .iproj-editor-wysiwyg h6:before {
 	content: 'H6';
+}
+
+.article-block-image:empty {
+	height: 100px;
+}
+
+.article-block-image:empty:before {
+	position: relative;
+	display: block;
+
+	font-family: 'iproj-editor';
+	content: '\e819';
+	font-size: 70px;
+	color: #ccc;
+
+	top: 70px;
+	left: 50%;
+	margin-left: -35px;
+
 }

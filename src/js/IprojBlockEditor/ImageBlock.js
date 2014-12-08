@@ -34,9 +34,7 @@
 		},
 
 		onFocus: function() {
-			if (!this.isEmpty()) {
-				this.toolbar.show();
-			}
+			this.toolbar.show();
 		},
 
 		onBlur: function() {
