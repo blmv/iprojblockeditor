@@ -78,11 +78,6 @@
 			var that = this;
 			$(this.element).on({
 				keyup: function(e) {
-					if (e.ctrlKey || e.shiftKey || e.metaKey) {
-						e.preventDefault();
-						return false;
-					}
-
 					clearTimeout(timer);
 					timer = setTimeout(function () {
 						that.undoer.save();
