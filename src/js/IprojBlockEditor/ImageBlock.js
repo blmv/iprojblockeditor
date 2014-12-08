@@ -46,7 +46,7 @@
 		removeEmptyTextBlocks: function() {
 			var that = this;
 			this.textBlockTypes.forEach(function(t) {
-				var $el = that.getTextBlock(t);
+				var $el = $('article-block-image-' + t, that.$element);
 				if ($.trim($el.text()) === '') {
 					$el.remove();
 				}

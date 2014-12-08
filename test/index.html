@@ -10,6 +10,7 @@
 		body {
 			font-size: 18px;
 			font-family: Georgia, serif;
+			padding-bottom: 3em;
 		}
 
 		.article-header-cover {
@@ -49,8 +50,12 @@
 	<p>Несмотря на то, что у кафе есть лидеры, Антон Лубны — идейный вдохновитель и Миша Антонов, в кафе нет директоров в прямом смысле этого слова, каждый несет ответсвенность, вкладывает себя и бережёт это место. Знает систему работы и делает всё для &nbsp;развития заведения.</p></div>
 </div>
 
+<button id="sourceButton">Html</button>
 
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<div id="source"></div>
+
+
+<script src="../bower_components/jquery/dist/jquery.js"></script>
 
 <script src="../bower_components/rangy-official/rangy-core.js"></script>
 <script src="../bower_components/rangy-official/rangy-classapplier.js"></script>
@@ -107,7 +112,7 @@
 		element: document.querySelector('.article'),
 		toolbarOptions: {
 			newblock: {
-				blocks: ['text', 'embed', 'image']
+				blocks: ['text', 'embed', 'image', 'articlecut']
 			}
 		},
 		blockOptions: {
@@ -132,6 +137,10 @@
 			containers: [],
 			inline: ['b', 'i']
 		}
+	});
+
+	$('#sourceButton').click(function(e) {
+		$('#source').text(editor.toHtml());
 	});
 </script>
 </body>

@@ -26,8 +26,8 @@
 					'buttons': [
 						{name: null, command: 'undo', hotkey: 'z'},
 						{name: null, command: 'redo', hotkey: 'y'},
-						{name: 'i', command: 'italic', hotkey: 'i'},
-						{name: 'b', command: 'bold', hotkey: 'b'},
+						{name: 'italic', command: 'italic', hotkey: 'i'},
+						{name: 'bold', command: 'bold', hotkey: 'b'},
 						{name: 'link', command: 'link'}
 					],
 					tags: {
@@ -59,6 +59,7 @@
 			var $el = $('<div>').addClass(cl).appendTo($p);
 
 			this.initTextBlock($el);
+			$el.data('wysiwyg').focus();
 
 			$(this).triggerHandler('stateChange', [true]);
 

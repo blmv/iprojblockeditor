@@ -24,8 +24,8 @@
 			}, options));
 
 			if (focus) {
-				this.$element.focus();
 				this.editor.focusOnBlock(this);
+				this.wysiwyg.focus();
 			}
 		},
 		isEmpty: function() {

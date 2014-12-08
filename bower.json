@@ -2,7 +2,7 @@
 	"name": "iprojblockeditor",
 	"version": "1.0.0",
 	"dependencies": {
-		"jquery": ">=v1.7.2",
+		"jquery": "~v1",
 		"rangy-official": ">=v1.3.0-alpha",
 		"undo": "https://github.com/jzaefferer/undo/archive/master.zip"
 	}

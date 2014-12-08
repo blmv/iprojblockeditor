@@ -12,7 +12,7 @@
 
 	$.extend(EmbedBlock.prototype, {
 		init: function(editor, element, options) {
-			IprojBlockEditor.BaseBlock.prototype.init.apply(this, [editor, element, options]);
+			ns.BaseBlock.prototype.init.apply(this, [editor, element, options]);
 
 			this.toolbar = new EmbedBlock.Toolbar({block: this});
 			this.editCommand = this.toolbar.getCommand('embed');

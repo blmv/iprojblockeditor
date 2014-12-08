@@ -5,6 +5,13 @@
 	'use strict';
 
 	var ArrangeBlockToolbar = function(context, options) {
+		this.defaultOptions = $.extend(this.defaultOptions, {
+			buttons: [
+				{name: 'up', icon: 'up-big', command: 'IprojBlockEditor.CallMethodCommand', commandOptions: {method: 'blockUp', object: this}},
+				{name: 'down', icon: 'down-big', command: 'IprojBlockEditor.CallMethodCommand', commandOptions: {method: 'blockDown', object: this}},
+				{name: 'remove', icon: 'cancel', command: 'IprojBlockEditor.CallMethodCommand', commandOptions: {method: 'blockRemove', object: this}}
+			]
+		});
 		ns.BlockToolbar.apply(this, [context, options]);
 		this.$element.addClass(this.options.baseCssClass + '-arrange-block');
 		this.$up = this.$element.find(this.options.baseCssClass + '-icon-up');
@@ -14,13 +21,6 @@
 	ArrangeBlockToolbar.prototype = Object.create(ns.BlockToolbar.prototype);
 
 	$.extend(ArrangeBlockToolbar.prototype, {
-		defaultOptions: $.extend({}, ns.BlockToolbar.prototype.defaultOptions, {
-			buttons: [
-				{name: 'up', icon: 'up-big', command: 'IprojBlockEditor.CallMethodCommand', commandOptions: {method: 'blockUp', object: this}},
-				{name: 'down', icon: 'down-big', command: 'IprojBlockEditor.CallMethodCommand', commandOptions: {method: 'blockDown', object: this}},
-				{name: 'remove', icon: 'cancel', command: 'IprojBlockEditor.CallMethodCommand', commandOptions: {method: 'blockRemove', object: this}}
-			]
-		}),
 		showForBlock: function(block) {
 			ns.BlockToolbar.prototype.showForBlock.apply(this, [block]);
 

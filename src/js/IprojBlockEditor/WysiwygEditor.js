@@ -17,7 +17,7 @@
 		this.element.contentEditable = true;
 		$(this.element).addClass('iproj-editor-wysiwyg');
 
-		if ($(this.element).text() === '' && this.options.tags.containers.indexOf('p') !== -1 && !this.options.inline) {
+		if ($.trim($(this.element).text()) === '' && this.options.tags.containers.indexOf('p') !== -1 && !this.options.inline) {
 			$(this.element).html('<p><br/></p>');
 		}
 		if (this.options.inline) {
@@ -66,6 +66,11 @@
 
 		setHtml: function(html) {
 			this.element.innerHTML = html;
+		},
+
+		focus: function() {
+			$(this.element).focus();
+			window.getSelection().selectAllChildren(this.element);
 		},
 
 		bindEvents: function() {
