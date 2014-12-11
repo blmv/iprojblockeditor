@@ -12,7 +12,7 @@
 
 		init: function(editor, element, options) {
 			this.editor = editor;
-			this.options = $.extend({}, this.defaultOptions, options);
+			this.options = $.extend(true, {}, this.defaultOptions, options);
 			this.$element = $(element);
 		},
 

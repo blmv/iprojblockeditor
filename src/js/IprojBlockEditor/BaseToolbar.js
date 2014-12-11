@@ -7,7 +7,7 @@
 	var BaseToolbar = function(context, options) {
 		this.hotkeys = {};
 		this.context = context;
-		this.options = $.extend({}, this.defaultOptions, options);
+		this.options = $.extend(true, {}, this.defaultOptions, options);
 
 		this.$element = $('<div class="' + this.options.baseCssClass+ '"><div class="' + this.options.baseCssClass+ '-inner"></div></div>').hide().appendTo('body');
 		this.$buttons = this.$element.children();
@@ -52,7 +52,7 @@
 		},
 
 		addButton: function(button) {
-			button = $.extend({
+			button = $.extend(true, {
 				commandOptions: {},
 				text: ''
 			}, button);
@@ -84,6 +84,7 @@
 			});
 
 			this.$buttons.on('click', '.' + this.options.baseCssClass + '-button', function(e) {
+				e.preventDefault();
 				that._runCommand($(this).data('command'));
 			});
 

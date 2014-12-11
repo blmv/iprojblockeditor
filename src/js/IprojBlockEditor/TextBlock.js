@@ -19,7 +19,7 @@
 
 			var focus = this.options.focusOnEmpty && this.isEmpty();
 
-			this.wysiwyg = new ns.WysiwygEditor($.extend({
+			this.wysiwyg = new ns.WysiwygEditor($.extend(true, {
 				element: this.$element.get(0)
 			}, options));
 
@@ -28,9 +28,15 @@
 				this.wysiwyg.focus();
 			}
 		},
+
+		onBlur: function() {
+			this.wysiwyg.blur();
+		},
+
 		isEmpty: function() {
 			return $.trim(this.$element.text()) === '';
 		},
+
 		toHtml: function() {
 			if (this.isEmpty()) {
 				return '';
@@ -40,6 +46,7 @@
 				.removeClass(this.editor.options.classFocusedBlock + ' iproj-editor-wysiwyg')
 				.wrap('<div>').parent().html();
 		},
+
 		remove: function() {
 			this.wysiwyg.destroy();
 			ns.BaseBlock.prototype.remove.apply(this, []);

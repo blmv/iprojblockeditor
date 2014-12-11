@@ -5,7 +5,7 @@
 	'use strict';
 
 	var BaseCommand = function(options) {
-		this.options = $.extend({}, this.defaultOptions, options);
+		this.options = $.extend(true, {}, this.defaultOptions, options);
 	};
 
 	BaseCommand.prototype = {

@@ -7,7 +7,7 @@
 	rangy.init();
 
 	var WysiwygEditor = function(options) {
-		this.options = $.extend({}, this.defaultOptions, options);
+		this.options = $.extend(true, {}, this.defaultOptions, options);
 
 		this.element = this.options.element;
 
@@ -71,6 +71,10 @@
 		focus: function() {
 			$(this.element).focus();
 			window.getSelection().selectAllChildren(this.element);
+		},
+
+		blur: function() {
+			this.toolbar.hide();
 		},
 
 		bindEvents: function() {

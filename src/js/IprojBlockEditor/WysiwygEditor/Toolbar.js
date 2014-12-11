@@ -23,7 +23,8 @@
 			'redo': {command: 'IprojBlockEditor.WysiwygEditor.RedoCommand'}
 		};
 
-		options.buttons.forEach(function(button) {
+		var opts = $.extend(true, {}, options);
+		opts.buttons.forEach(function(button) {
 			if (commandShortcuts[button.command]) {
 				$.extend(button, commandShortcuts[button.command]);
 			}
@@ -31,7 +32,7 @@
 			button.commandOptions.editor = context.editor;
 		});
 
-		ns.BaseToolbar.apply(this, [context, options]);
+		ns.BaseToolbar.apply(this, [context, opts]);
 		this.$element.addClass(this.options.baseCssClass + '-centered');
 
 		this.editor = context.editor;

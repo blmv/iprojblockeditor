@@ -5,7 +5,7 @@
 	'use strict';
 
 	var ArrangeBlockToolbar = function(context, options) {
-		this.defaultOptions = $.extend({}, this.defaultOptions, {
+		this.defaultOptions = $.extend(true, {}, this.defaultOptions, {
 			buttons: [
 				{name: 'up', icon: 'up-big', command: 'IprojBlockEditor.CallMethodCommand', commandOptions: {method: 'blockUp', object: this}},
 				{name: 'down', icon: 'down-big', command: 'IprojBlockEditor.CallMethodCommand', commandOptions: {method: 'blockDown', object: this}},

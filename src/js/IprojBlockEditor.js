@@ -4,7 +4,7 @@
 	'use strict';
 
 	var Editor = function(options) {
-		this.options = $.extend({}, this.defaultOptions, options);
+		this.options = $.extend(true, {}, this.defaultOptions, options);
 		this.$element = $(this.options.element);
 		this.focusedBlock = null;
 
@@ -156,7 +156,7 @@
 					that.focusOnBlock(block);
 				});
 
-			block.init(this, element, $.extend(this.options.blockOptions[type] || {}, options));
+			block.init(this, element, $.extend(true, {}, this.options.blockOptions[type], options));
 
 			return block;
 		},
